@@ -1,4 +1,5 @@
 const Router = require("express").Router();
+const AuthRouter = require("./AuthRouter");
 
 
 
@@ -6,8 +7,7 @@ const Router = require("express").Router();
 
 
 
-
-
+Router.use("/auth", AuthRouter);
 
 
 
