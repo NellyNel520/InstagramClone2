@@ -1,6 +1,9 @@
 const Router = require("express").Router();
-const AuthRouter = require("./AuthRouter");
 
+
+const AuthRouter = require("./AuthRouter");
+const UserRouter = require("./UserRouter");
+const PostRouter = require("./PostRouter");
 
 
 
@@ -8,6 +11,9 @@ const AuthRouter = require("./AuthRouter");
 
 
 Router.use("/auth", AuthRouter);
+Router.use("/users", UserRouter);
+Router.use("/posts", PostRouter);
+
 
 
 
