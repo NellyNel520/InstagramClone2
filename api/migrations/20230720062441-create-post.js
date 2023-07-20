@@ -19,6 +19,11 @@ module.exports = {
 			likeCount: {
 				type: Sequelize.INTEGER,
 			},
+			likes_by_users: [
+				{
+					type: Sequelize.INTEGER,
+				},
+			],
 			image: {
 				allowNull: false,
 				type: Sequelize.STRING,
